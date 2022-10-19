@@ -453,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012828216092, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4000012828216092, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -483,10 +483,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192866653827455941, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.18113655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192866653827455941, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.18113655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192866653827455941, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.30516744
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
 --- !u!4 &5990752460126189009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012828216092, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
+  m_PrefabInstance: {fileID: 5993543860463566541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5993963329287720591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010964463682, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
+  m_PrefabInstance: {fileID: 5993543860463566541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1260111961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993963329287720591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ac1d0a1a936334eb2c03ade373c41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 2000000}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 8592328426186405200}
+  hitEffect: {fileID: 2397744609833709131, guid: 16da9bc8d98b88e4aace242032daeafe, type: 3}
+--- !u!198 &8592328426186405200 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2599506412576148381, guid: 32cc06541c3334f5dac5152f64ca6ef5, type: 3}
   m_PrefabInstance: {fileID: 5993543860463566541}
   m_PrefabAsset: {fileID: 0}

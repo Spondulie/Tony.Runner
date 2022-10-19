@@ -695,7 +695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9.4}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713298271
@@ -1425,10 +1425,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5990752460126189009, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1001 &1573419896
@@ -2153,10 +2149,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1679581701}
-    - target: {fileID: 997347720815227283, guid: 22fd3efee4f889d4b94d58c582a337f5, type: 3}
-      propertyPath: chaseRange
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 997347720815227288, guid: 22fd3efee4f889d4b94d58c582a337f5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2200,10 +2192,6 @@ PrefabInstance:
     - target: {fileID: 997347720815227288, guid: 22fd3efee4f889d4b94d58c582a337f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 997347720815227292, guid: 22fd3efee4f889d4b94d58c582a337f5, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22fd3efee4f889d4b94d58c582a337f5, type: 3}
