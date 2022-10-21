@@ -15,6 +15,7 @@ public class DeathHandler : MonoBehaviour
    {
         gameOverCanvas.enabled = true;
         Time.timeScale = 0;
+        FindObjectOfType<WeaponSwitcher>().enabled = false;
         GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

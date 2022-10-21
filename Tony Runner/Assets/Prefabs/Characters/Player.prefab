@@ -50,10 +50,9 @@ GameObject:
   - component: {fileID: 5217893054761353591}
   - component: {fileID: 8942805108617549441}
   - component: {fileID: 7247898372270201811}
-  - component: {fileID: 1540311457}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -366,24 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3020843ae7d5b4e47a77c5b2097a7440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
---- !u!114 &1540311457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4075133714258705521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 925fda92287e3f04498389c683e3c72b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 4075133714257198673}
-  zoomedOutFOV: 60
-  zoomedInFOV: 30
-  zoomedOutSensitivity: 2
-  zoomedInSensitivity: 0.5
+  ammoSlots: []
 --- !u!1 &4075133714258705523
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,13 +467,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8443362083590693221}
     m_Modifications:
+    - target: {fileID: 866550575078474300, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 4075133714257198673}
+    - target: {fileID: 866550575078474300, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: zoomedInFOV
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 866550575078474300, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 4075133714252155281}
+    - target: {fileID: 866550575078474300, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: zoomedInSensitivity
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 866550575078474300, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: zoomedOutSensitivity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5477948357986739243, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
       propertyPath: m_Name
       value: Carbine
       objectReference: {fileID: 0}
     - target: {fileID: 5477948357986739243, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5477948357986777099, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
       propertyPath: m_RootOrder
@@ -548,9 +550,18 @@ PrefabInstance:
     - target: {fileID: 5918217430839109674, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 5743177665042370433}
+      objectReference: {fileID: 6458743613187062450}
+    - target: {fileID: 5918217430839109674, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+--- !u!198 &6458743613187062450 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8346820666174498651, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
+  m_PrefabInstance: {fileID: 3060138997887933929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7382060830291027426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5477948357986777099, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
@@ -622,9 +633,18 @@ PrefabInstance:
     - target: {fileID: 5918217430839109674, guid: 41e674fc3cecb5c46849a2604cb4acd0, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 5743177665042370433}
+      objectReference: {fileID: 4256807520466565717}
+    - target: {fileID: 5918217430839109674, guid: 41e674fc3cecb5c46849a2604cb4acd0, type: 3}
+      propertyPath: timeBetweenShots
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e674fc3cecb5c46849a2604cb4acd0, type: 3}
+--- !u!198 &4256807520466565717 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 301768831964343690, guid: 41e674fc3cecb5c46849a2604cb4acd0, type: 3}
+  m_PrefabInstance: {fileID: 4549531474484402143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8297525829276430292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5477948357986777099, guid: 41e674fc3cecb5c46849a2604cb4acd0, type: 3}
@@ -683,12 +703,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575903932582858333, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
       propertyPath: m_Name
-      value: Rifle2
+      value: Riffle2
       objectReference: {fileID: 0}
     - target: {fileID: 575903932582858333, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1670865361833010600, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 4075133714257198673}
+    - target: {fileID: 1670865361833010600, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 4075133714252155281}
     - target: {fileID: 6111613878018787467, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
       propertyPath: FPCamera
       value: 
@@ -699,11 +727,6 @@ PrefabInstance:
       objectReference: {fileID: 7247898372270201811}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
---- !u!198 &5743177665042370433 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2589223840163263874, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
-  m_PrefabInstance: {fileID: 7808424769915304451}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7759320743011438336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 573010415889282307, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
