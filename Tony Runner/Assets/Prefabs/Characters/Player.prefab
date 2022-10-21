@@ -553,7 +553,7 @@ PrefabInstance:
       objectReference: {fileID: 6458743613187062450}
     - target: {fileID: 5918217430839109674, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
       propertyPath: timeBetweenShots
-      value: 0.25
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd98f057bfd7ec4c90f858eb183b33a, type: 3}
@@ -725,6 +725,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 7247898372270201811}
+    - target: {fileID: 6111613878018787467, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001621b053df9f94c91752dc2a1f55e1, type: 3}
 --- !u!4 &7759320743011438336 stripped
