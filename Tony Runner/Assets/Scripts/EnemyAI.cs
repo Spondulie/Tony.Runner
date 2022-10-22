@@ -26,8 +26,11 @@ public class EnemyAI : MonoBehaviour
         if (health.IsDead())
         {
             enabled = false;
-            navMeshAgent.enabled = false;
+            // NavMesh was sending error but removing .enabled = false cause the enemy to continue to move
+            //navMeshAgent.enabled = false;
+            navMeshAgent.isStopped = true;
         }
+
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (isProvoked)
         {
